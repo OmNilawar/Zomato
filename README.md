@@ -13,8 +13,7 @@ This project provides a minimal setup to get React working with Vite, including 
 
 ## Features
 - **User Authentication**: Secure sign-up and login.
-- **Restaurant Listings**: Browse through various restaurants.
-- **Menu Management**: Dynamic menus for each restaurant.
+- **Menu Management**: Dynamic menus for each User
 - **Cart & Checkout**: Add items to the cart and proceed to checkout.
 - **Order Tracking**: Real-time tracking of orders.
 - **Payment Integration**: Support for multiple payment gateways.
