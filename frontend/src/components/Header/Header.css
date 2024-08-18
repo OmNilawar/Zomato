@@ -1,0 +1,78 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('header_img.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+}
+.blackDiv{
+    height: 100%;
+    background-color: black;
+    border-radius: 10px;
+    opacity: 0.3;
+    z-index: 20;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vh;
+    max-width: 50%;
+    bottom: 10%;
+    left: 5vw;
+    animation: fadein 3s;
+    z-index: 30;
+}
+
+.header-contents h2{
+    color: white;
+    font-weight: 500;
+    font-size: max(4vw,20px);
+}
+
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+}
+
+.header-contents button{
+    background: white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 1px solid tomato;
+    cursor: pointer;
+    font-size: max(1vw,13px);
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@media (max-width : 1050px){
+
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width : 750px){
+    .header-contents{
+        max-width: 65%;
+    }
+
+    .header-contents p{
+        display: none;
+    }
+
+    .header-contents buton{
+        padding: 2vw 4vw;
+    }
+}
