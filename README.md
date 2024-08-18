@@ -7,9 +7,6 @@ This project provides a minimal setup to get React working with Vite, including 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Available Scripts](#available-scripts)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
