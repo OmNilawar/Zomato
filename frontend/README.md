@@ -28,3 +28,10 @@ To get started with this project, clone the repository and install the dependenc
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 npm install
+
+## USAGE
+
+To start the development server with Hot Module Replacement (HMR):
+
+```bash
+npm run dev
