@@ -11,6 +11,30 @@ const StoreContextProvider = (props) => {
         console.log(cartItems);
     }, [cartItems]);
 
+    const getTotalCartAmount = () => {
+        let total = 0;
+        for(const item in cartItems)
+        {
+            if(cartItems[item] > 0)
+            {
+                const food = food_list.find((food) => food._id === item)
+                total += food.price * cartItems[item];
+            }
+        }
+
+        return total;
+    }
+
+    const getDeliveryFee = () => {
+        let amount = getTotalCartAmount();
+        if(amount === 0)
+            return 0;
+        else if (amount >= 50)
+            return "free delivery"
+        else    
+            return 2;
+    }
+
     const addToCart = (itemId) => {
         if(!cartItems[itemId]){
             setCartItems({...cartItems,[itemId] : 1});
@@ -30,7 +54,9 @@ const StoreContextProvider = (props) => {
         food_list,
         cartItems,
         addToCart,
-        deleteFromCart
+        deleteFromCart,
+        getTotalCartAmount,
+        getDeliveryFee
     }
 
     return (
