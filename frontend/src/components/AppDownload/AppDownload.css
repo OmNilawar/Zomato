@@ -1,0 +1,62 @@
+.app-download{
+    width: auto;
+    border: 1px solid white;
+}
+.main-content{
+    margin: 150px 0px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+.main-content img{
+    margin : auto 0px;
+    width: 250px;
+}
+.content-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.content-right h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.content-right p{
+    color: gray;
+}
+
+.email-input{
+    display: flex;
+    gap: 10px;
+}
+
+.email-input input{
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.email-input button{
+    cursor: pointer;
+    padding:10px;
+    color: white;
+    background-color: tomato;
+    border-radius: 5px;
+    width: 30%;
+    border: none;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.store-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.store-logo img{
+    width: 150px;
+    cursor: pointer;
+}
