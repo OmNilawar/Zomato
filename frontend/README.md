@@ -2,27 +2,35 @@
 
 This project provides a minimal setup to get React working with Vite, including Hot Module Replacement (HMR) and some ESLint rules.
 
-## Table of Contents
-
+- [Overview](#overview)
 - [Features](#features)
+- [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Functionality](#functionality)
+- [Contact](#contact)
+
 
 ## Features
+- **User Authentication**: Secure sign-up and login.
+- **Menu Management**: Dynamic menus for each User
+- **Cart & Checkout**: Add items to the cart and proceed to checkout.
+- **Order Tracking**: Real-time tracking of orders.
+- **Payment Integration**: Support for multiple payment gateways.
+- **Responsive Design**: Optimized for both desktop and mobile.
 
-- Fast development with Vite
-- Hot Module Replacement (HMR)
-- ESLint integration for code quality
-- Two official plugins for React:
-  - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-  - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **Frontend**: HTML, CSS, JavaScript, React.js
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Payment Gateway**: RazorPay
 
 ## Installation
 
 To get started with this project, clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/OmNilawar/Zomato.git
 cd your-repo-name
 npm install
 ```
@@ -34,3 +42,14 @@ To start the development server with Hot Module Replacement (HMR):
 ```bash
 npm run dev
 ```
+
+## Functionality
+- Sign up or log in to your account.
+- Browse through the list of available Dishes
+- Add items to your cart and proceed to checkout.
+- Track your order in real-time.
+
+## Contact
+- **Name**: OMKAR NILAWAR
+- **Email**: omkarnilawar9@gmail.com
+- **GitHub**: [https://github.com/OmNilawar](https:??github.com/OmNilawar)
