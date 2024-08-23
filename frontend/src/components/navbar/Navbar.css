@@ -51,6 +51,41 @@
     right: -8px;
 }
 
+.navbar-profile{
+    position: relative;
+}
+
+.navbar-profile .drop-down{
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile .drop-down img{
+    width: 20px;
+}
+
+.navbar-profile .drop-down li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: gray;
+}
+
+.navbar-profile:hover .drop-down{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    list-style: none;
+    background-color: #fff2ef;
+    border: 1 px solid gray;
+    outline: none;
+}
+
 @media (max-width : 1050px){
     .navbar-logo{
         width: 140px;

@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom'
 import {StoreContext} from '../../context/StoreContext.jsx'
 const Navbar = ({setShowLogin}) => {
     const [menu,setMenu] = useState("home")
-    const {getTotalCartAmount} = useContext(StoreContext)
+    const {getTotalCartAmount,token,setToken,LogOut} = useContext(StoreContext)
+
   return (
     <div className='navbar' id='navbar'>
         <Link to='/'><img src={assets.logo} alt="" className="logo" /></Link>
@@ -21,7 +22,17 @@ const Navbar = ({setShowLogin}) => {
                 <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
                 {getTotalCartAmount() > 0 ? <div className="dot"></div> : <></>}
             </div>
-            <button onClick={() => setShowLogin(true)}>sign in</button>
+            {!token
+             ? <button onClick={() => setShowLogin(true)}>sign in</button>
+             : <div className='navbar-profile'>
+                <img src={assets.profile_icon} alt="" />
+                <ul className='drop-down'>
+                    <li><img src={assets.bag_icon} alt="" /><p>orders</p></li>
+                    <hr />
+                    <li onClick={LogOut}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
+                </ul>
+             </div>
+            }
         </div>
     </div>
   )

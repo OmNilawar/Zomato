@@ -1,16 +1,25 @@
 import { createContext, useState } from "react";
 import { food_list } from "../assets/assets";
 import { useEffect } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
     const[cartItems,setCartItems] = useState({});
-
+    const [token,setToken] = useState("");
+    const navigate = useNavigate();
+    const url = "http://localhost:4000/";
     useEffect(() => {
         console.log(cartItems);
     }, [cartItems]);
 
+    useEffect(() => {
+        if(localStorage.getItem("token"))
+            setToken(localStorage.getItem("token"))
+    },[]);
+
+    
     const getTotalCartAmount = () => {
         let total = 0;
         for(const item in cartItems)
@@ -23,6 +32,12 @@ const StoreContextProvider = (props) => {
         }
 
         return total;
+    }
+
+    const LogOut = () => {
+        localStorage.removeItem("token");
+        setToken("");
+        navigate("/");
     }
 
     const getDeliveryFee = () => {
@@ -56,7 +71,11 @@ const StoreContextProvider = (props) => {
         addToCart,
         deleteFromCart,
         getTotalCartAmount,
-        getDeliveryFee
+        getDeliveryFee,
+        url,
+        token,
+        setToken,
+        LogOut
     }
 
     return (
