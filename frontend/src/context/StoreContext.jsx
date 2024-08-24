@@ -1,22 +1,36 @@
 import { createContext, useState } from "react";
-import { food_list } from "../assets/assets";
 import { useEffect } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
+import axios from 'axios'
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
 
     const[cartItems,setCartItems] = useState({});
     const [token,setToken] = useState("");
+    const [food_list,setFoodList] = useState([]);
+
     const navigate = useNavigate();
+
     const url = "http://localhost:4000/";
+
+    const fetchFoodList = async () => {
+        const responce = await axios.get(url+'api/food/list')
+        setFoodList(responce.data.data);
+    }
+
     useEffect(() => {
         console.log(cartItems);
     }, [cartItems]);
 
     useEffect(() => {
-        if(localStorage.getItem("token"))
-            setToken(localStorage.getItem("token"))
+        async function loadData(){
+            await fetchFoodList();
+            if(localStorage.getItem("token"))
+                setToken(localStorage.getItem("token"))
+        }
+
+        loadData();
     },[]);
 
     

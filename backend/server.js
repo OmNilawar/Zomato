@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import ConnectDatabase from './config/db.config.js';
+import foodRouter from './routes/food.routes.js'
 import userRouter from './routes/user.routes.js';
 
 //app config
@@ -15,6 +16,9 @@ app.use(cors());
 ConnectDatabase();
 
 //API endpoints
+app.use('/api/food',foodRouter);
+app.use('/images',express.static('uploads'));
+
 app.use('/api/user',userRouter);
 
 //routes
