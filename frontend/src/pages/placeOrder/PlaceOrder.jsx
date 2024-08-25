@@ -14,7 +14,7 @@ const PlaceOrder = () => {
         <div className="place-order-left">
           <p className="title">Delivery Details</p>
           <div className="multi-feilds">
-            <input type="text" placeholder='First Name' />
+            <input type="text" placeholder='First Name' re/>
             <input type="text" placeholder='Last Name' />
           </div>
 

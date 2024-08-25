@@ -29,6 +29,8 @@ const Navbar = ({setShowLogin}) => {
                 <ul className='drop-down'>
                     <li><img src={assets.bag_icon} alt="" /><p>orders</p></li>
                     <hr />
+                    <li><img src={assets.address_book_icon} alt="" className='address-icon'/><p>address</p></li>
+                    <hr />
                     <li onClick={LogOut}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
                 </ul>
              </div>

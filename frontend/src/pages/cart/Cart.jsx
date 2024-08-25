@@ -28,7 +28,8 @@ const Cart = () => {
           if(cartItems[item._id] > 0)
           {
             return(
-              <>
+              <div key={item._id}>
+                {/* the key to above element is my customization */}
                 <div className='cart-items-title cart-item'>
                   <img src={url+'images/'+item.image} alt="" />
                   <p>{item.name}</p>
@@ -38,7 +39,7 @@ const Cart = () => {
                   <p className='remove' onClick={() => deleteFromCart(item._id)}>X</p>
                 </div>
                 <hr />
-              </>
+              </div>
             );
           }
         })}
