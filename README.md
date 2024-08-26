@@ -6,7 +6,7 @@ This project provides a minimal setup to get React working with Vite, including 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Live Demo] (#Live Demo)
+- [LiveDemo](#Live-Demo)
 - [Usage](#usage)
 - [Functionality](#functionality)
 - [Contact](#contact)
