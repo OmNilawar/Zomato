@@ -6,6 +6,7 @@ This project provides a minimal setup to get React working with Vite, including 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
+- [Live Demo] (#Live Demo)
 - [Usage](#usage)
 - [Functionality](#functionality)
 - [Contact](#contact)
@@ -26,7 +27,6 @@ This project provides a minimal setup to get React working with Vite, including 
 - **Payment Gateway**: RazorPay
 
 ## Installation
-
 To get started with this project, clone the repository and install the dependencies:
 
 ```bash
@@ -36,12 +36,13 @@ npm install
 ```
 
 ## USAGE
-
 To start the development server with Hot Module Replacement (HMR):
 
 ```bash
 npm run dev
 ```
+## Live Demo
+Check out the live demo of the project [here](https://zomato-alpha.vercel.app/).
 
 ## Functionality
 - Sign up or log in to your account.
