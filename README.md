@@ -41,8 +41,10 @@ To start the development server with Hot Module Replacement (HMR):
 ```bash
 npm run dev
 ```
+
 ## Live Demo
-Check out the live demo of the project  <a href="https://zomato-alpha.vercel.app/" target="_blank" rel="noopener noreferrer">here</a>.
+Check out the live demo of the project [here](https://zomato-alpha.vercel.app/).
+
 ## Functionality
 - Sign up or log in to your account.
 - Browse through the list of available Dishes
