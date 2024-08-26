@@ -12,7 +12,7 @@ const StoreContextProvider = (props) => {
 
     const navigate = useNavigate();
 
-    const url = "http://localhost:4000/";
+    const url = "https://zomato-l9h6.onrender.com/";
 
     const fetchFoodList = async () => {
         const responce = await axios.get(url+'api/food/list')
