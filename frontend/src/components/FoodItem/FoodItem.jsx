@@ -9,7 +9,6 @@ const FoodItem = ({ id, name, description, price, image }) => {
 
   return (
     <div className='food-item'>
-      <Link to={`/food/${id}`} className="food-item-link">
         <div className="food-item-image-container">
           <img className='food-item-image' src={url + 'images/' + image} alt={name} />
           {
@@ -30,7 +29,6 @@ const FoodItem = ({ id, name, description, price, image }) => {
           <p>{description}</p>
           <p>${price}</p>
         </div>
-      </Link>
     </div>
   );
 };
