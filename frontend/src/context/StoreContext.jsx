@@ -43,6 +43,14 @@ const StoreContextProvider = (props) => {
         loadData();
     },[]);
 
+    useEffect(() => {
+        if (token) {
+            loadCartData(localStorage.getItem("token"));
+        }
+    }, [token]);
+
+
+
     
     const getTotalCartAmount = () => {
         let total = 0;
