@@ -66,6 +66,15 @@
     cursor: pointer;
 }
 
+.password-sec{
+    display: flex;
+    gap: 10px;
+}
+
+.password-sec img{
+    width: 30px;
+}
+
 .login-popup-container span{
     cursor: pointer;
     color:  rgb(106, 106, 234);;

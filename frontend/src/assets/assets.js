@@ -60,6 +60,8 @@ import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 import address_book_icon from './address_book_icon.png'
+import open_eye from './open_eye.png'
+import close_eye from './close_eye.png'
 
 export const assets = {
     logo,
@@ -81,7 +83,9 @@ export const assets = {
     logout_icon,
     bag_icon,
     parcel_icon,
-    address_book_icon
+    address_book_icon,
+    open_eye,
+    close_eye
 }
 
 export const menu_list = [
