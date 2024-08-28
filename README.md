@@ -31,7 +31,7 @@ To get started with this project, clone the repository and install the dependenc
 
 ```bash
 git clone https://github.com/OmNilawar/Zomato.git
-cd your-repo-name
+cd frontend
 npm install
 ```
 
